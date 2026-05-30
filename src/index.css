@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 96%;
+    --foreground: 30 10% 10%;
+
+    --card: 40 25% 94%;
+    --card-foreground: 30 10% 10%;
+
+    --popover: 40 20% 96%;
+    --popover-foreground: 30 10% 10%;
+
+    --primary: 30 10% 10%;
+    --primary-foreground: 40 20% 96%;
+
+    --secondary: 35 20% 88%;
+    --secondary-foreground: 30 10% 15%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 30 8% 45%;
+
+    --accent: 40 60% 50%;
+    --accent-foreground: 30 10% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 15% 85%;
+    --input: 35 15% 85%;
+    --ring: 40 60% 50%;
+
+    --radius: 0.25rem;
+
+    --gold: 40 60% 50%;
+    --gold-light: 42 55% 65%;
+    --gold-dark: 38 65% 38%;
+    --cream: 40 30% 95%;
+    --ivory: 45 40% 97%;
+    --taupe: 30 8% 55%;
+    --charcoal: 30 10% 15%;
+    --deep-brown: 25 30% 18%;
+
+    --sidebar-background: 30 10% 10%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 40 60% 50%;
+    --sidebar-primary-foreground: 30 10% 10%;
+    --sidebar-accent: 30 15% 18%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 10% 20%;
+    --sidebar-ring: 40 60% 50%;
+  }
+
+  .dark {
+    --background: 30 10% 6%;
+    --foreground: 40 20% 92%;
+    --card: 30 10% 9%;
+    --card-foreground: 40 20% 92%;
+    --popover: 30 10% 9%;
+    --popover-foreground: 40 20% 92%;
+    --primary: 40 60% 50%;
+    --primary-foreground: 30 10% 6%;
+    --secondary: 30 10% 14%;
+    --secondary-foreground: 40 20% 92%;
+    --muted: 30 10% 14%;
+    --muted-foreground: 35 10% 55%;
+    --accent: 40 60% 50%;
+    --accent-foreground: 30 10% 6%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 30 10% 18%;
+    --input: 30 10% 18%;
+    --ring: 40 60% 50%;
+    --sidebar-background: 30 10% 6%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 40 60% 50%;
+    --sidebar-primary-foreground: 30 10% 6%;
+    --sidebar-accent: 30 10% 12%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 30 10% 14%;
+    --sidebar-ring: 40 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(40, 60%, 50%), hsl(42, 55%, 65%), hsl(38, 65%, 38%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-luxury {
+    background: linear-gradient(135deg, hsl(30, 10%, 10%), hsl(25, 30%, 18%));
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, hsl(40, 60%, 50%), hsl(42, 55%, 65%));
+  }
+
+  .shadow-luxury {
+    box-shadow: 0 20px 60px -15px hsl(30 10% 10% / 0.15), 0 0 0 1px hsl(40 60% 50% / 0.05);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 30px hsl(40 60% 50% / 0.15);
+  }
+
+  .border-gold {
+    border-color: hsl(40, 60%, 50%);
+  }
+
+  .letter-spacing-luxury {
+    letter-spacing: 0.2em;
+  }
+
+  .letter-spacing-wide {
+    letter-spacing: 0.1em;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(40, 20%, 96%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(40, 60%, 50%);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(38, 65%, 38%);
+}

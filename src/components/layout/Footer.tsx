@@ -41,7 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-sm letter-spacing-luxury uppercase mb-6 text-accent">Contact</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/60 font-body">
-              <li>support@vitore.com</li>
+              <li>vitorecollection74@gmail.com</li>
               <li>Accra, Ghana</li>
             </ul>
           </div>

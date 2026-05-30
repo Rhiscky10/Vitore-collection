@@ -75,14 +75,14 @@ const Contact = () => {
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0"><Mail size={20} className="text-accent" strokeWidth={1.5} /></div>
                 <div>
                   <h4 className="font-heading text-base font-semibold text-foreground mb-1">Email</h4>
-                  <p className="text-sm text-muted-foreground font-body">rhis.cky10@gmail.com</p>
+                  <p className="text-sm text-muted-foreground font-body">vitorecollection74@gmail.com</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0"><Phone size={20} className="text-accent" strokeWidth={1.5} /></div>
                 <div>
                   <h4 className="font-heading text-base font-semibold text-foreground mb-1">Phone</h4>
-                  <p className="text-sm text-muted-foreground font-body">+233 XX XXX XXXX</p>
+                  <p className="text-sm text-muted-foreground font-body">+233 20 636 3325</p>
                 </div>
               </div>
               <div className="flex gap-4">

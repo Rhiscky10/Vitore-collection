@@ -209,7 +209,7 @@ const Checkout = () => {
                 <span className="text-foreground font-medium">You will receive payment instructions via phone or inbox shortly after placing your order (Authorise Payment).</span>
               </li>
               <li className="pl-2">
-                <span className="text-foreground font-medium">Confirm Your Payment</span> – Complete your payment, then send a screenshot of the confirmation to <span className="text-accent">0206363325</span> or <span className="text-accent">rhis.cky10@gmail.com</span>. You'll receive an acknowledgment via email or SMS once received.
+                <span className="text-foreground font-medium">Confirm Your Payment</span> – Complete your payment, then send a screenshot of the confirmation to <span className="text-accent">0206363325</span> or <span className="text-accent">vitorecollection74@gmail.com</span>. You'll receive an acknowledgment via email or SMS once received.
               </li>
               <li className="pl-2">
                 <span className="text-foreground font-medium">Relax While We Handle the Rest</span> – Your order will be processed and shipped within 1–3 business days after payment confirmation.

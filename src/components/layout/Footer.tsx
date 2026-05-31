@@ -15,8 +15,8 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors" aria-label="Instagram"><Instagram size={20} /></a>
-              <a href="https://snapchat.com" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors" aria-label="Snapchat"><Ghost size={20} /></a>
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors" aria-label="WhatsApp"><MessageCircle size={20} /></a>
+              <a href="https://snapchat.com/t/XRW6QHYk" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors" aria-label="Snapchat"><Ghost size={20} /></a>
+              <a href="wa.me/233206363325" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-accent transition-colors" aria-label="WhatsApp"><MessageCircle size={20} /></a>
             </div>
           </div>
 

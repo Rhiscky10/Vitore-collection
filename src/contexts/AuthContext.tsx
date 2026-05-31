@@ -54,20 +54,24 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   const signInWithGoogle = async () => {
-    try {
-      const result = await lovable.auth.signInWithOAuth("google", {
-        redirect_uri: window.location.origin,
-      });
-      if (result.error) {
-        console.error("Google sign-in error:", result.error);
-        return { error: result.error instanceof Error ? result.error : new Error(String(result.error)) };
-      }
-      return { error: null };
-    } catch (err) {
-      console.error("Google sign-in exception:", err);
-      return { error: err instanceof Error ? err : new Error("Google sign-in failed") };
-    }
-  };
+  try {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: "google",
+      options: {
+        redirectTo: window.location.origin,
+      },
+    });
+
+    return { error };
+  } catch (err) {
+    console.error("Google sign-in exception:", err);
+    return {
+      error: err instanceof Error
+        ? err
+        : new Error("Google sign-in failed"),
+    };
+  }
+};
 
   const signInWithEmail = async (email: string, password: string) => {
     try {
